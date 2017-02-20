@@ -61,17 +61,17 @@
 					"systems": [
 						{
 							"host": "i686-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-i686-linux-gnu.zip",
-							"archiveFileName": "bossac-1.7.0-etherkit-1-i686-linux-gnu.zip",
-							"checksum": "SHA-256:fadfa9e680a88683cc9844bc2fcbcc2c274b172c049bb95180b70dd35db831b6",
-							"size": "32312"
+							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
+							"archiveFileName": "bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
+							"checksum": "SHA-256:99cb5f11dba87d66582a51a44313bc1a050bc400d46cd1d1b72eb6e83d956ff2",
+							"size": "31908"
 						},
 						{
 							"host": "x86_64-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-x86_64-linux-gnu.zip",
-							"archiveFileName": "bossac-1.7.0-etherkit-1-x86_64-linux-gnu.zip",
-							"checksum": "SHA-256:d03fd9e5e97fb92fb0306e20f9af87fa00730be2c27b74ccb31e97621a26657f",
-							"size": "30926"
+							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+							"archiveFileName": "bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+							"checksum": "SHA-256:531aa7569a73819fcc76f70088bb41af55d918c3d519ad42a4878cbfefb90ab7",
+							"size": "30812"
 						},
 						{
 							"host": "i386-apple-darwin11",
