@@ -61,28 +61,28 @@
 					"systems": [
 						{
 							"host": "i686-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
+							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
 							"archiveFileName": "bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
 							"checksum": "SHA-256:99cb5f11dba87d66582a51a44313bc1a050bc400d46cd1d1b72eb6e83d956ff2",
 							"size": "31908"
 						},
 						{
 							"host": "x86_64-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
 							"archiveFileName": "bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
 							"checksum": "SHA-256:531aa7569a73819fcc76f70088bb41af55d918c3d519ad42a4878cbfefb90ab7",
 							"size": "30812"
 						},
 						{
 							"host": "i386-apple-darwin11",
-							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-i386-apple-darwin11.zip",
+							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i386-apple-darwin11.zip",
 							"archiveFileName": "bossac-1.7.0-etherkit-1-i386-apple-darwin11.zip",
 							"checksum": "SHA-256:ab86c215e899243af4444381121f80bc29f936a7827f2392c8433556f6054399",
 							"size": "80315"
 						},
 						{
 							"host": "i686-mingw32",
-							"url": "https://github.com/etherkit/ArduinoBoards/bossac-1.7.0-etherkit-1-i686-mingw32.zip",
+							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i686-mingw32.zip",
 							"archiveFileName": "bossac-1.7.0-etherkit-1-i686-mingw32.zip",
 							"checksum": "SHA-256:7b82bdac4639e46e6bf59b7d25fea98a6e6566957f80b58129a8768ddf741582",
 							"size": "322756"
