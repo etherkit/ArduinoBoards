@@ -17,7 +17,7 @@
           "help": {
             "online": "https://www.etherkit.com/docs"
           },
-          "url": "https://etherkit.github.io/arduino/etherkit-samd-1.0.0.zip",
+          "url": "https://github.com/etherkit/ArduinoBoards/raw/master/etherkit-samd-1.0.0.zip",
           "archiveFileName": "etherkit-samd-1.0.0.zip",
           "checksum": "SHA-256:a26a6042d20fc2ecd74505e5b8ca31f677c1150a82ca21751fc91f036de2baeb",
           "size": "6940363",
