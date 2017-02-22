@@ -161,6 +161,16 @@ static const uint8_t SCL = PIN_WIRE_SCL;
 #define PIN_USB_DM          (28ul)
 #define PIN_USB_DP          (29ul)
 
+/*
+ * I2S Interfaces
+ */
+#define I2S_INTERFACES_COUNT 1
+
+#define I2S_DEVICE          0
+#define I2S_CLOCK_GENERATOR 3
+#define PIN_I2S_SD          (9u)
+#define PIN_I2S_SCK         (1u)
+
 #ifdef __cplusplus
 }
 #endif
@@ -209,4 +219,3 @@ extern Uart Serial1;
 #define SERIAL_PORT_HARDWARE_OPEN   Serial1
 
 #endif /* _VARIANT_ARDUINO_ZERO_ */
-
