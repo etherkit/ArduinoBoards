@@ -147,10 +147,11 @@ void UHD_Init(void)
 	USB->HOST.DESCADD.reg = (uint32_t)(&usb_pipe_table[0]);
 	// For USB_SPEED_FULL
 	uhd_force_full_speed();
-	for (i = 0; i < sizeof(usb_pipe_table); i++)
-	{
-		(*(uint32_t *)(&usb_pipe_table[0] + i)) = 0;
-	}
+	// for (i = 0; i < sizeof(usb_pipe_table); i++)
+	// {
+	// 	(*(uint32_t *)(&usb_pipe_table[0] + i)) = 0;
+	// }
+	memset(usb_pipe_table, 0, sizeof(usb_pipe_table));
 
 	uhd_state = UHD_STATE_NO_VBUS;
 
@@ -458,7 +459,7 @@ void UHD_Pipe_Send(uint32_t ul_pipe, uint32_t ul_token_type)
 		USB->HOST.HostPipe[ul_pipe].PINTFLAG.reg = USB_HOST_PINTFLAG_TRCPT(1);  // Transfer Complete 0
 		USB->HOST.HostPipe[ul_pipe].PSTATUSSET.reg = USB_HOST_PSTATUSSET_BK0RDY;
 	}
-   
+
 	// Unfreeze pipe
     uhd_unfreeze_pipe(ul_pipe);
 }
@@ -496,7 +497,7 @@ uint32_t UHD_Pipe_Is_Transfer_Complete(uint32_t ul_pipe, uint32_t ul_token_type)
             return 1;
          }
 		 break;
- 
+
       case USB_HOST_PCFG_PTOKEN_OUT:
          if (Is_uhd_out_ready(ul_pipe))
          {
