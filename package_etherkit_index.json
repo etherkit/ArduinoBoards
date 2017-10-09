@@ -19,8 +19,8 @@
           },
           "url": "https://github.com/etherkit/ArduinoBoards/raw/master/etherkit-samd-1.0.0.zip",
           "archiveFileName": "etherkit-samd-1.0.0.zip",
-          "checksum": "SHA-256:5efe4f066566dd762effa1b5686ebbd3ce4c2b126a7c979e65a03cdd10169948",
-          "size": "6959034",
+          "checksum": "SHA-256:f38f0fc0f9fbf822f075b2b6ab7636fd92f30501cbae2d0befd1eada768582f4",
+          "size": "6959107",
           "boards": [
             {"name": "Empyrean Alpha"},
             {"name": "Empyrean Beta"}
@@ -44,7 +44,7 @@
             {
             "packager": "arduino",
             "name": "openocd",
-            "version": "0.9.0-arduino"
+            "version": "0.9.0-arduino6-static"
             },
             {
             "packager": "arduino",

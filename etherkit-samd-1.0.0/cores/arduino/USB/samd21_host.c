@@ -151,7 +151,7 @@ void UHD_Init(void)
 	// {
 	// 	(*(uint32_t *)(&usb_pipe_table[0] + i)) = 0;
 	// }
-	memset(usb_pipe_table, 0, sizeof(usb_pipe_table));
+	memset((void *)usb_pipe_table, 0, sizeof(usb_pipe_table));
 
 	uhd_state = UHD_STATE_NO_VBUS;
 

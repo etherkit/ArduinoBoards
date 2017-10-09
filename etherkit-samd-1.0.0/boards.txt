@@ -22,6 +22,11 @@ empyrean_alpha.pid.0=0x73ea
 empyrean_alpha.vid.1=0x1209
 empyrean_alpha.pid.1=0x88ea
 
+empyrean_alpha.vid.2=0x1209
+empyrean_alpha.pid.2=0x73ea
+empyrean_alpha.vid.2.build.vid=0x1209
+empyrean_alpha.pid.2.build.pid=0x88ea
+
 empyrean_alpha.upload.tool=bossac
 empyrean_alpha.upload.protocol=sam-ba
 empyrean_alpha.upload.maximum_size=262144
@@ -40,9 +45,11 @@ empyrean_alpha.build.openocdscript=openocd_scripts/arduino_zero.cfg
 empyrean_alpha.build.variant=empyrean_alpha
 empyrean_alpha.build.variant_system_lib=
 empyrean_alpha.build.vid=0x1209
-empyrean_alpha.build.pid=0x73ea
+empyrean_alpha.build.pid=0x88ea
 empyrean_alpha.bootloader.tool=openocd
 empyrean_alpha.bootloader.file=empyrean_alpha/samd21_sam_ba_empyrean_alpha.bin
+empyrean_alpha.bootloader.size=0x8000
+empyrean_alpha.bootloader.NVMCTRL_BOOTPROT=0x02
 
 # Empyrean Beta
 # -------------
