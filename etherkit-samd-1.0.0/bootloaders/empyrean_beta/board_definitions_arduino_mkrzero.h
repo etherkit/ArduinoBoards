@@ -1,6 +1,5 @@
 /*
-  Copyright (c) 2015 Arduino LLC.  All right reserved.
-  Copyright (c) 2015 Atmel Corporation/Thibaut VIARD.  All right reserved.
+  Copyright (c) 2016 Arduino LLC.  All right reserved.
 
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -23,11 +22,11 @@
 /*
  * USB device definitions
  */
-#define STRING_PRODUCT "Arduino MKR1000"
+#define STRING_PRODUCT "Arduino MKRZero"
 #define USB_VID_HIGH   0x23
 #define USB_VID_LOW    0x41
 #define USB_PID_HIGH   0x00
-#define USB_PID_LOW    0x4E
+#define USB_PID_LOW    0x4F
 
 /*
  * If BOOT_DOUBLE_TAP_ADDRESS is defined the bootloader is started by
@@ -42,15 +41,15 @@
  * If BOOT_LOAD_PIN is defined the bootloader is started if the selected
  * pin is tied LOW.
  */
-//#define BOOT_LOAD_PIN                     PIN_PA21 // Pin 7
-//#define BOOT_LOAD_PIN                     PIN_PA15 // Pin 5
+//#define BOOT_LOAD_PIN                     PIN_PA21
+//#define BOOT_LOAD_PIN                     PIN_PA15
 
-#define BOOT_USART_MODULE                 SERCOM0
-#define BOOT_USART_BUS_CLOCK_INDEX        PM_APBCMASK_SERCOM0
-#define BOOT_USART_PER_CLOCK_INDEX        GCLK_CLKCTRL_ID_SERCOM0_CORE_Val
+#define BOOT_USART_MODULE                 SERCOM5
+#define BOOT_USART_BUS_CLOCK_INDEX        PM_APBCMASK_SERCOM5
+#define BOOT_USART_PER_CLOCK_INDEX        GCLK_CLKCTRL_ID_SERCOM5_CORE_Val
 #define BOOT_USART_PAD_SETTINGS           UART_RX_PAD3_TX_PAD2
-#define BOOT_USART_PAD3                   PINMUX_PA11C_SERCOM0_PAD3
-#define BOOT_USART_PAD2                   PINMUX_PA10C_SERCOM0_PAD2
+#define BOOT_USART_PAD3                   PINMUX_PB23D_SERCOM5_PAD3
+#define BOOT_USART_PAD2                   PINMUX_PB22D_SERCOM5_PAD2
 #define BOOT_USART_PAD1                   PINMUX_UNUSED
 #define BOOT_USART_PAD0                   PINMUX_UNUSED
 
@@ -68,9 +67,9 @@
 /*
  * LEDs definitions
  */
-// PA20 (digital pin 6)
-#define BOARD_LED_PORT                    (0)
-#define BOARD_LED_PIN                     (20)
+// PB08 (digital pin 32)
+#define BOARD_LED_PORT                    (1)
+#define BOARD_LED_PIN                     (8)
 
 // No RX/TX led
 //#define BOARD_LEDRX_PORT

@@ -21,7 +21,6 @@
 #define _BOARD_DRIVER_LED_
 
 #include <sam.h>
-#include <stdint.h>
 #include "board_definitions.h"
 
 #if defined(BOARD_LED_PORT)

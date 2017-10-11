@@ -57,12 +57,11 @@ SIZE=$(ARM_GCC_PATH)size
 
 # -----------------------------------------------------------------------------
 # Boards definitions
-BOARD_ID?=etherkit_empyrean_beta
-NAME=samd21_sam_ba_empyrean_beta
+BOARD_ID?=arduino_zero
 
 # -----------------------------------------------------------------------------
 # Compiler options
-CFLAGS_EXTRA=-D__SAMD21G16B__ -DBOARD_ID_$(BOARD_ID)
+CFLAGS_EXTRA=-D__SAMD21G16A__ -DBOARD_ID_$(BOARD_ID)
 CFLAGS=-mthumb -mcpu=cortex-m0plus -Wall -c -std=gnu99 -ffunction-sections -fdata-sections -nostdlib -nostartfiles --param max-inline-insns-single=500
 ifdef DEBUG
   CFLAGS+=-g3 -O1 -DDEBUG=1
@@ -74,7 +73,8 @@ ELF=$(NAME).elf
 BIN=$(NAME).bin
 HEX=$(NAME).hex
 
-INCLUDES=-I"$(MODULE_PATH)/tools/CMSIS/4.0.0-atmel/CMSIS/Include/" -I"$(MODULE_PATH)/tools/CMSIS/4.0.0-atmel/Device/ATMEL/"
+
+INCLUDES=-I"$(MODULE_PATH)/tools/CMSIS/4.5.0/CMSIS/Include/" -I"$(MODULE_PATH)/tools/CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/"
 
 # -----------------------------------------------------------------------------
 # Linker options

@@ -57,8 +57,7 @@ SIZE=$(ARM_GCC_PATH)size
 
 # -----------------------------------------------------------------------------
 # Boards definitions
-BOARD_ID?=etherkit_empyrean_alpha
-NAME=samd21_sam_ba_empyrean_alpha
+BOARD_ID?=arduino_zero
 
 # -----------------------------------------------------------------------------
 # Compiler options
@@ -74,7 +73,8 @@ ELF=$(NAME).elf
 BIN=$(NAME).bin
 HEX=$(NAME).hex
 
-INCLUDES=-I"$(MODULE_PATH)/tools/CMSIS/4.0.0-atmel/CMSIS/Include/" -I"$(MODULE_PATH)/tools/CMSIS/4.0.0-atmel/Device/ATMEL/"
+
+INCLUDES=-I"$(MODULE_PATH)/tools/CMSIS/4.5.0/CMSIS/Include/" -I"$(MODULE_PATH)/tools/CMSIS-Atmel/1.1.0/CMSIS/Device/ATMEL/"
 
 # -----------------------------------------------------------------------------
 # Linker options

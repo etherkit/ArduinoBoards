@@ -159,7 +159,7 @@ Memory Configuration
 
 Name             Origin             Length             Attributes
 FLASH            0x0000000000000000 0x0000000000002000 xr
-RAM              0x0000000020000000 0x0000000000007ffc xrw
+RAM              0x0000000020000000 0x0000000000001ffc xrw
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
@@ -203,7 +203,7 @@ LOAD /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
  .isr_vector    0x0000000000000000       0x40 build/board_startup.o
                 0x0000000000000000                exception_table
 
-.text           0x0000000000000040     0x18cc
+.text           0x0000000000000040     0x186c
  *(.text*)
  .text          0x0000000000000040       0x60 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
  .text.LED_pulse
@@ -266,102 +266,102 @@ LOAD /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
                 0x0000000000000614       0x50 build/board_startup.o
                 0x0000000000000614                Reset_Handler
  .text.startup.main
-                0x0000000000000664      0x100 build/main.o
+                0x0000000000000664       0xe4 build/main.o
                 0x0000000000000664                main
  .text.SysTick_Handler
-                0x0000000000000764        0xc build/main.o
-                0x0000000000000764                SysTick_Handler
+                0x0000000000000748        0xc build/main.o
+                0x0000000000000748                SysTick_Handler
  .text.usb_init
-                0x0000000000000770       0x20 build/sam_ba_usb.o
-                0x0000000000000770                usb_init
+                0x0000000000000754       0x20 build/sam_ba_usb.o
+                0x0000000000000754                usb_init
  .text.USB_SendString
-                0x0000000000000790       0x46 build/sam_ba_usb.o
-                0x0000000000000790                USB_SendString
- *fill*         0x00000000000007d6        0x2 
+                0x0000000000000774       0x46 build/sam_ba_usb.o
+                0x0000000000000774                USB_SendString
+ *fill*         0x00000000000007ba        0x2 
  .text.sam_ba_usb_CDC_Enumerate
-                0x00000000000007d8      0x364 build/sam_ba_usb.o
-                0x00000000000007d8                sam_ba_usb_CDC_Enumerate
+                0x00000000000007bc      0x364 build/sam_ba_usb.o
+                0x00000000000007bc                sam_ba_usb_CDC_Enumerate
  .text.cdc_putc
-                0x0000000000000b3c       0x1c build/sam_ba_cdc.o
-                0x0000000000000b3c                cdc_putc
+                0x0000000000000b20       0x1c build/sam_ba_cdc.o
+                0x0000000000000b20                cdc_putc
  .text.cdc_getc
-                0x0000000000000b58       0x1c build/sam_ba_cdc.o
-                0x0000000000000b58                cdc_getc
+                0x0000000000000b3c       0x1c build/sam_ba_cdc.o
+                0x0000000000000b3c                cdc_getc
  .text.cdc_is_rx_ready
-                0x0000000000000b74       0x24 build/sam_ba_cdc.o
-                0x0000000000000b74                cdc_is_rx_ready
+                0x0000000000000b58       0x24 build/sam_ba_cdc.o
+                0x0000000000000b58                cdc_is_rx_ready
  .text.cdc_write_buf
-                0x0000000000000b98       0x1c build/sam_ba_cdc.o
-                0x0000000000000b98                cdc_write_buf
+                0x0000000000000b7c       0x1c build/sam_ba_cdc.o
+                0x0000000000000b7c                cdc_write_buf
  .text.cdc_read_buf
-                0x0000000000000bb4       0x28 build/sam_ba_cdc.o
-                0x0000000000000bb4                cdc_read_buf
+                0x0000000000000b98       0x28 build/sam_ba_cdc.o
+                0x0000000000000b98                cdc_read_buf
  .text.cdc_read_buf_xmd
-                0x0000000000000bdc       0x38 build/sam_ba_cdc.o
-                0x0000000000000bdc                cdc_read_buf_xmd
+                0x0000000000000bc0       0x38 build/sam_ba_cdc.o
+                0x0000000000000bc0                cdc_read_buf_xmd
  .text.sam_ba_putdata.isra.0
-                0x0000000000000c14       0x24 build/sam_ba_monitor.o
+                0x0000000000000bf8       0x18 build/sam_ba_monitor.o
  .text.sam_ba_monitor_init
-                0x0000000000000c38       0x2c build/sam_ba_monitor.o
-                0x0000000000000c38                sam_ba_monitor_init
+                0x0000000000000c10       0x2c build/sam_ba_monitor.o
+                0x0000000000000c10                sam_ba_monitor_init
  .text.sam_ba_putdata_term
-                0x0000000000000c64       0x80 build/sam_ba_monitor.o
-                0x0000000000000c64                sam_ba_putdata_term
+                0x0000000000000c3c       0x80 build/sam_ba_monitor.o
+                0x0000000000000c3c                sam_ba_putdata_term
  .text.call_applet
-                0x0000000000000ce4       0x1c build/sam_ba_monitor.o
-                0x0000000000000ce4                call_applet
+                0x0000000000000cbc       0x1c build/sam_ba_monitor.o
+                0x0000000000000cbc                call_applet
  .text.sam_ba_monitor_sys_tick
-                0x0000000000000d00       0x48 build/sam_ba_monitor.o
-                0x0000000000000d00                sam_ba_monitor_sys_tick
+                0x0000000000000cd8       0x2c build/sam_ba_monitor.o
+                0x0000000000000cd8                sam_ba_monitor_sys_tick
  .text.sam_ba_monitor_run
-                0x0000000000000d48      0x508 build/sam_ba_monitor.o
-                0x0000000000000d48                sam_ba_monitor_run
+                0x0000000000000d04      0x4e8 build/sam_ba_monitor.o
+                0x0000000000000d04                sam_ba_monitor_run
  .text.serial_open
-                0x0000000000001250       0xac build/sam_ba_serial.o
-                0x0000000000001250                serial_open
+                0x00000000000011ec       0xac build/sam_ba_serial.o
+                0x00000000000011ec                serial_open
  .text.serial_putc
-                0x00000000000012fc       0x14 build/sam_ba_serial.o
-                0x00000000000012fc                serial_putc
+                0x0000000000001298       0x14 build/sam_ba_serial.o
+                0x0000000000001298                serial_putc
  .text.serial_is_rx_ready
-                0x0000000000001310       0x10 build/sam_ba_serial.o
-                0x0000000000001310                serial_is_rx_ready
+                0x00000000000012ac       0x10 build/sam_ba_serial.o
+                0x00000000000012ac                serial_is_rx_ready
  .text.serial_getc
-                0x0000000000001320       0x18 build/sam_ba_serial.o
-                0x0000000000001320                serial_getc
+                0x00000000000012bc       0x18 build/sam_ba_serial.o
+                0x00000000000012bc                serial_getc
  .text.serial_sharp_received
-                0x0000000000001338       0x1c build/sam_ba_serial.o
-                0x0000000000001338                serial_sharp_received
+                0x00000000000012d4       0x1c build/sam_ba_serial.o
+                0x00000000000012d4                serial_sharp_received
  .text.serial_putdata
-                0x0000000000001354       0x1a build/sam_ba_serial.o
-                0x0000000000001354                serial_putdata
+                0x00000000000012f0       0x1a build/sam_ba_serial.o
+                0x00000000000012f0                serial_putdata
  .text.serial_getdata
-                0x000000000000136e        0xe build/sam_ba_serial.o
-                0x000000000000136e                serial_getdata
+                0x000000000000130a        0xe build/sam_ba_serial.o
+                0x000000000000130a                serial_getdata
  .text.serial_add_crc
-                0x000000000000137c       0x18 build/sam_ba_serial.o
-                0x000000000000137c                serial_add_crc
+                0x0000000000001318       0x18 build/sam_ba_serial.o
+                0x0000000000001318                serial_add_crc
  .text.getbytes
-                0x0000000000001394       0x64 build/sam_ba_serial.o
+                0x0000000000001330       0x64 build/sam_ba_serial.o
  .text.serial_putdata_xmd
-                0x00000000000013f8      0x108 build/sam_ba_serial.o
-                0x00000000000013f8                serial_putdata_xmd
+                0x0000000000001394      0x108 build/sam_ba_serial.o
+                0x0000000000001394                serial_putdata_xmd
  .text.serial_getdata_xmd
-                0x0000000000001500       0xf4 build/sam_ba_serial.o
-                0x0000000000001500                serial_getdata_xmd
- .text.memcpy   0x00000000000015f4       0x12 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memcpy-stub.o)
-                0x00000000000015f4                memcpy
- .text.memset   0x0000000000001606       0x10 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memset.o)
-                0x0000000000001606                memset
- .text.strlen   0x0000000000001616        0xe /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strlen.o)
-                0x0000000000001616                strlen
+                0x000000000000149c       0xf4 build/sam_ba_serial.o
+                0x000000000000149c                serial_getdata_xmd
+ .text.memcpy   0x0000000000001590       0x12 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memcpy-stub.o)
+                0x0000000000001590                memcpy
+ .text.memset   0x00000000000015a2       0x10 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-memset.o)
+                0x00000000000015a2                memset
+ .text.strlen   0x00000000000015b2        0xe /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/../../../../arm-none-eabi/lib/armv6-m/libc_s.a(lib_a-strlen.o)
+                0x00000000000015b2                strlen
  *(.init)
- .init          0x0000000000001624        0x4 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
-                0x0000000000001624                _init
- .init          0x0000000000001628        0x8 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
+ .init          0x00000000000015c0        0x4 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
+                0x00000000000015c0                _init
+ .init          0x00000000000015c4        0x8 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
  *(.fini)
- .fini          0x0000000000001630        0x4 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
-                0x0000000000001630                _fini
- .fini          0x0000000000001634        0x8 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
+ .fini          0x00000000000015cc        0x4 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crti.o
+                0x00000000000015cc                _fini
+ .fini          0x00000000000015d0        0x8 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -373,65 +373,65 @@ LOAD /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata        0x000000000000163c        0x4 build/sam_ba_usb.o
+ .rodata        0x00000000000015d8        0x4 build/sam_ba_usb.o
  .rodata.str1.1
-                0x0000000000001640       0x19 build/sam_ba_usb.o
- *fill*         0x0000000000001659        0x3 
+                0x00000000000015dc       0x1f build/sam_ba_usb.o
+ *fill*         0x00000000000015fb        0x1 
  .rodata.devDescriptor
-                0x000000000000165c       0x14 build/sam_ba_usb.o
- .rodata        0x0000000000001670       0x20 build/sam_ba_monitor.o
+                0x00000000000015fc       0x14 build/sam_ba_usb.o
+ .rodata        0x0000000000001610       0x20 build/sam_ba_monitor.o
  .rodata.uart_if
-                0x0000000000001690       0x1c build/sam_ba_monitor.o
-                0x0000000000001690                uart_if
+                0x0000000000001630       0x1c build/sam_ba_monitor.o
+                0x0000000000001630                uart_if
  .rodata.str1.1
-                0x00000000000016ac       0x29 build/sam_ba_monitor.o
+                0x000000000000164c       0x29 build/sam_ba_monitor.o
                                          0x2c (size before relaxing)
  .rodata.RomBOOT_Version
-                0x00000000000016d5        0x4 build/sam_ba_monitor.o
-                0x00000000000016d5                RomBOOT_Version
- *fill*         0x00000000000016d9        0x3 
+                0x0000000000001675        0x4 build/sam_ba_monitor.o
+                0x0000000000001675                RomBOOT_Version
+ *fill*         0x0000000000001679        0x3 
  .rodata.usbcdc_if
-                0x00000000000016dc       0x1c build/sam_ba_monitor.o
-                0x00000000000016dc                usbcdc_if
+                0x000000000000167c       0x1c build/sam_ba_monitor.o
+                0x000000000000167c                usbcdc_if
  .rodata.RomBOOT_ExtendedCapabilities
-                0x00000000000016f8        0xe build/sam_ba_monitor.o
-                0x00000000000016f8                RomBOOT_ExtendedCapabilities
+                0x0000000000001698        0xe build/sam_ba_monitor.o
+                0x0000000000001698                RomBOOT_ExtendedCapabilities
  .rodata.crc16Table
-                0x0000000000001706      0x200 build/sam_ba_serial.o
+                0x00000000000016a6      0x200 build/sam_ba_serial.o
  *(.eh_frame*)
- *fill*         0x0000000000001906        0x2 
- .eh_frame      0x0000000000001908        0x0 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
- .eh_frame      0x0000000000001908        0x4 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtend.o
+ *fill*         0x00000000000018a6        0x2 
+ .eh_frame      0x00000000000018a8        0x0 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
+ .eh_frame      0x00000000000018a8        0x4 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtend.o
 
-.glue_7         0x000000000000190c        0x0
+.glue_7         0x00000000000018ac        0x0
  .glue_7        0x0000000000000000        0x0 linker stubs
 
-.glue_7t        0x000000000000190c        0x0
+.glue_7t        0x00000000000018ac        0x0
  .glue_7t       0x0000000000000000        0x0 linker stubs
 
-.vfp11_veneer   0x000000000000190c        0x0
+.vfp11_veneer   0x00000000000018ac        0x0
  .vfp11_veneer  0x0000000000000000        0x0 linker stubs
 
-.v4_bx          0x000000000000190c        0x0
+.v4_bx          0x00000000000018ac        0x0
  .v4_bx         0x0000000000000000        0x0 linker stubs
 
-.iplt           0x000000000000190c        0x0
+.iplt           0x00000000000018ac        0x0
  .iplt          0x0000000000000000        0x0 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
 
-.rel.dyn        0x000000000000190c        0x0
+.rel.dyn        0x00000000000018ac        0x0
  .rel.iplt      0x0000000000000000        0x0 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x000000000000190c                __exidx_start = .
+                0x00000000000018ac                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x000000000000190c                __exidx_end = .
-                0x000000000000190c                __etext = .
+                0x00000000000018ac                __exidx_end = .
+                0x00000000000018ac                __etext = .
                 0x0000000000002000                PROVIDE (__sketch_vectors_ptr, (ORIGIN (FLASH) + 0x2000))
 
-.data           0x0000000020000000       0x5c load address 0x000000000000190c
+.data           0x0000000020000000       0x5c load address 0x00000000000018ac
                 0x0000000020000000                __data_start__ = .
  *(vtable)
  *(.data*)
@@ -469,10 +469,10 @@ LOAD /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
                 0x000000002000005c                . = ALIGN (0x4)
                 0x000000002000005c                __data_end__ = .
 
-.igot.plt       0x000000002000005c        0x0 load address 0x0000000000001968
+.igot.plt       0x000000002000005c        0x0 load address 0x0000000000001908
  .igot.plt      0x0000000000000000        0x0 /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/bin/../lib/gcc/arm-none-eabi/4.8.3/armv6-m/crtbegin.o
 
-.bss            0x000000002000005c      0x348 load address 0x0000000000001968
+.bss            0x000000002000005c      0x348 load address 0x0000000000001908
                 0x000000002000005c                . = ALIGN (0x4)
                 0x000000002000005c                __bss_start__ = .
  *(.bss*)
@@ -563,12 +563,12 @@ LOAD /home/jason/.arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q
 
 .stack_dummy    0x00000000200003a4        0x0
  *(.stack*)
-                0x0000000020007ffc                __StackTop = (ORIGIN (RAM) + 0x7ffc)
-                0x0000000020007ffc                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
-                0x0000000020007ffc                PROVIDE (__stack, __StackTop)
-                0x0000000020007ffb                __ram_end__ = ((ORIGIN (RAM) + 0x7ffc) - 0x1)
+                0x0000000020001ffc                __StackTop = (ORIGIN (RAM) + 0x1ffc)
+                0x0000000020001ffc                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x0000000020001ffc                PROVIDE (__stack, __StackTop)
+                0x0000000020001ffb                __ram_end__ = ((ORIGIN (RAM) + 0x1ffc) - 0x1)
                 0x0000000000000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
-OUTPUT(build/.elf elf32-littlearm)
+OUTPUT(build/samd21_sam_ba_arduino_mkrfox1200.elf elf32-littlearm)
 
 .ARM.attributes
                 0x0000000000000000       0x28

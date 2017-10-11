@@ -25,6 +25,10 @@
   #include "board_definitions_arduino_mkr1000.h"
 #elif defined(BOARD_ID_genuino_mkr1000)
   #include "board_definitions_genuino_mkr1000.h"
+#elif defined(BOARD_ID_arduino_mkrzero)
+  #include "board_definitions_arduino_mkrzero.h"
+#elif defined(BOARD_ID_arduino_mkrfox1200)
+  #include "board_definitions_arduino_mkrfox1200.h"
 #elif defined(BOARD_ID_etherkit_empyrean_alpha)
   #include "board_definitions_etherkit_empyrean_alpha.h"
 #else
@@ -35,4 +39,3 @@
 // ------------------
 
 #define BOOT_PIN_MASK (1U << (BOOT_LOAD_PIN & 0x1f))
-
