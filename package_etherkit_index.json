@@ -42,9 +42,9 @@
             "version": "1.7.0"
             },
             {
-            "packager": "arduino",
+            "packager": "etherkit",
             "name": "openocd",
-            "version": "0.9.0-arduino"
+            "version": "0.9.0-etherkit-1"
             },
             {
             "packager": "arduino",
@@ -91,6 +91,19 @@
 							"archiveFileName": "bossac-1.7.0-etherkit-1-i686-mingw32.zip",
 							"checksum": "SHA-256:7b82bdac4639e46e6bf59b7d25fea98a6e6566957f80b58129a8768ddf741582",
 							"size": "322756"
+						}
+					]
+	    	},
+        {
+					"name": "openocd",
+					"version": "0.9.0-etherkit-1",
+					"systems": [
+						{
+							"host": "x86_64-pc-linux-gnu",
+							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+							"archiveFileName": "openocd-0.9.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+							"checksum": "SHA-256:d23109989eacf2c20ac7afd84977cf076f6c1a1c1a1338617001b04519ef949d",
+							"size": "880156"
 						}
 					]
 	    	}
