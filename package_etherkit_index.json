@@ -1,134 +1,129 @@
 {
-  "packages": [
-    {
-      "name": "etherkit",
-      "maintainer": "Etherkit",
-      "websiteURL": "https://www.etherkit.com",
-      "email": "support@etherkit.com",
-      "help": {
-        "online": "https://www.etherkit.com/docs"
-      },
-      "platforms": [
-        {
-          "name": "Etherkit SAMD Boards",
-          "architecture": "samd",
-          "version": "1.0.0",
-          "category": "Etherkit",
-          "help": {
-            "online": "https://www.etherkit.com/docs"
-          },
-          "url": "https://github.com/etherkit/ArduinoBoards/raw/master/etherkit-samd-1.0.0.zip",
-          "archiveFileName": "etherkit-samd-1.0.0.zip",
-          "checksum": "SHA-256:7c67d12c110f1c1a3ea7cf0ffbb011558254b78ff4a991b581de8694edfb2275",
-          "size": "1569300",
-          "boards": [
-            {"name": "Empyrean Alpha"},
-            {"name": "Empyrean Beta"}
-          ],
-          "toolsDependencies": [
-            {
-            "packager": "arduino",
-            "name": "arm-none-eabi-gcc",
-            "version": "4.8.3-2014q1"
-            },
-            {
-            "packager": "etherkit",
-            "name": "bossac",
-            "version": "1.7.0-etherkit-1"
-            },
-            {
-            "packager": "arduino",
-            "name": "bossac",
-            "version": "1.7.0"
-            },
-            {
-            "packager": "etherkit",
-            "name": "openocd",
-            "version": "0.9.0-etherkit-1"
-            },
-            {
-            "packager": "arduino",
-            "name": "CMSIS",
-            "version": "4.5.0"
-            },
-            {
-            "packager": "arduino",
-            "name": "CMSIS-Atmel",
-            "version": "1.1.0"
-            }
-          ]
-        }
-      ],
-      "tools": [
+	"packages": [{
+		"name": "etherkit",
+		"maintainer": "Etherkit",
+		"websiteURL": "https://www.etherkit.com",
+		"email": "support@etherkit.com",
+		"help": {
+			"online": "https://www.etherkit.com/docs"
+		},
+		"platforms": [{
+			"name": "Etherkit SAMD Boards",
+			"architecture": "samd",
+			"version": "1.0.0",
+			"category": "Etherkit",
+			"help": {
+				"online": "https://www.etherkit.com/docs"
+			},
+			"url": "https://github.com/etherkit/ArduinoBoards/raw/master/etherkit-samd-1.0.0.zip",
+			"archiveFileName": "etherkit-samd-1.0.0.zip",
+			"checksum": "SHA-256:7c67d12c110f1c1a3ea7cf0ffbb011558254b78ff4a991b581de8694edfb2275",
+			"size": "1569300",
+			"boards": [{
+					"name": "Empyrean Alpha"
+				},
 				{
+					"name": "Empyrean Beta"
+				}
+			],
+			"toolsDependencies": [{
+					"packager": "arduino",
+					"name": "arm-none-eabi-gcc",
+					"version": "4.8.3-2014q1"
+				},
+				{
+					"packager": "etherkit",
 					"name": "bossac",
-					"version": "1.7.0-etherkit-1",
-					"systems": [
-						{
-							"host": "i686-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
-							"archiveFileName": "bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
-							"checksum": "SHA-256:99cb5f11dba87d66582a51a44313bc1a050bc400d46cd1d1b72eb6e83d956ff2",
-							"size": "31908"
-						},
-						{
-							"host": "x86_64-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
-							"archiveFileName": "bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
-							"checksum": "SHA-256:531aa7569a73819fcc76f70088bb41af55d918c3d519ad42a4878cbfefb90ab7",
-							"size": "30812"
-						},
-						{
-							"host": "i386-apple-darwin11",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i386-apple-darwin11.tar.gz",
-							"archiveFileName": "bossac-1.7.0-etherkit-1-i386-apple-darwin11.tar.gz",
-							"checksum": "SHA-256:3943745ee4f779c946d98756d22d110d8ef5212b22c7a99a331346cf7e4246b6",
-							"size": "80350"
-						},
-						{
-							"host": "i686-mingw32",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i686-mingw32.zip",
-							"archiveFileName": "bossac-1.7.0-etherkit-1-i686-mingw32.zip",
-							"checksum": "SHA-256:7b82bdac4639e46e6bf59b7d25fea98a6e6566957f80b58129a8768ddf741582",
-							"size": "322756"
-						}
-					]
-	    	},
-        {
+					"version": "1.7.0-etherkit-1"
+				},
+				{
+					"packager": "arduino",
+					"name": "bossac",
+					"version": "1.7.0"
+				},
+				{
+					"packager": "etherkit",
 					"name": "openocd",
-					"version": "0.9.0-etherkit-1",
-					"systems": [
-            {
-							"host": "i686-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i686-linux-gnu.tar.gz",
-							"archiveFileName": "openocd-0.9.0-etherkit-1-i686-linux-gnu.tar.gz",
-							"checksum": "SHA-256:e60d91ac9dbb35d13219003a2d518449e3f7beb14f20829b926965f6a7bd5e0f",
-							"size": "157"
-						},
-						{
-							"host": "x86_64-pc-linux-gnu",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-x86_64-linux-gnu.tar.gz",
-							"archiveFileName": "openocd-0.9.0-etherkit-1-x86_64-linux-gnu.tar.gz",
-							"checksum": "SHA-256:43b3468eb8ad7ac34bdb40d568765b21fcc4f492300f9bb43eeb12e8a595d139",
-							"size": "1302896"
-						},
-						{
-							"host": "i386-apple-darwin11",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i386-apple-darwin11.tar.gz",
-							"archiveFileName": "openocd-0.9.0-etherkit-1-i386-apple-darwin11.tar.gz",
-							"checksum": "SHA-256:a54981d048119d713875ec54bca5f31616568588596be6fa6754e2d304f09b01",
-							"size": "159"
-						},
-            {
-							"host": "i686-mingw32",
-							"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i686-mingw32.zip",
-							"archiveFileName": "openocd-0.9.0-etherkit-1-i686-mingw32.zip",
-							"checksum": "SHA-256:e7ac765f78f594f67f53f100c271bd7b0d568c6c8f25653253de6599d15e2a08",
-							"size": "1735861"
-						}
-					]
-	    	}
-  		]
-		}
-	]
+					"version": "0.9.0-etherkit-1"
+				},
+				{
+					"packager": "arduino",
+					"name": "CMSIS",
+					"version": "4.5.0"
+				},
+				{
+					"packager": "arduino",
+					"name": "CMSIS-Atmel",
+					"version": "1.1.0"
+				}
+			]
+		}],
+		"tools": [{
+				"name": "bossac",
+				"version": "1.7.0-etherkit-1",
+				"systems": [{
+						"host": "i686-pc-linux-gnu",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
+						"archiveFileName": "bossac-1.7.0-etherkit-1-i686-linux-gnu.tar.gz",
+						"checksum": "SHA-256:99cb5f11dba87d66582a51a44313bc1a050bc400d46cd1d1b72eb6e83d956ff2",
+						"size": "31908"
+					},
+					{
+						"host": "x86_64-pc-linux-gnu",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+						"archiveFileName": "bossac-1.7.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+						"checksum": "SHA-256:531aa7569a73819fcc76f70088bb41af55d918c3d519ad42a4878cbfefb90ab7",
+						"size": "30812"
+					},
+					{
+						"host": "i386-apple-darwin11",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i386-apple-darwin11.tar.gz",
+						"archiveFileName": "bossac-1.7.0-etherkit-1-i386-apple-darwin11.tar.gz",
+						"checksum": "SHA-256:3943745ee4f779c946d98756d22d110d8ef5212b22c7a99a331346cf7e4246b6",
+						"size": "80350"
+					},
+					{
+						"host": "i686-mingw32",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/bossac-1.7.0-etherkit-1-i686-mingw32.zip",
+						"archiveFileName": "bossac-1.7.0-etherkit-1-i686-mingw32.zip",
+						"checksum": "SHA-256:7b82bdac4639e46e6bf59b7d25fea98a6e6566957f80b58129a8768ddf741582",
+						"size": "322756"
+					}
+				]
+			},
+			{
+				"name": "openocd",
+				"version": "0.9.0-etherkit-1",
+				"systems": [{
+						"host": "i686-pc-linux-gnu",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i686-linux-gnu.tar.gz",
+						"archiveFileName": "openocd-0.9.0-etherkit-1-i686-linux-gnu.tar.gz",
+						"checksum": "SHA-256:e60d91ac9dbb35d13219003a2d518449e3f7beb14f20829b926965f6a7bd5e0f",
+						"size": "157"
+					},
+					{
+						"host": "x86_64-pc-linux-gnu",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+						"archiveFileName": "openocd-0.9.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+						"checksum": "SHA-256:43b3468eb8ad7ac34bdb40d568765b21fcc4f492300f9bb43eeb12e8a595d139",
+						"size": "1302896"
+					},
+					{
+						"host": "i386-apple-darwin11",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i386-apple-darwin11.tar.gz",
+						"archiveFileName": "openocd-0.9.0-etherkit-1-i386-apple-darwin11.tar.gz",
+						"checksum": "SHA-256:a54981d048119d713875ec54bca5f31616568588596be6fa6754e2d304f09b01",
+						"size": "159"
+					},
+					{
+						"host": "i686-mingw32",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i686-mingw32.zip",
+						"archiveFileName": "openocd-0.9.0-etherkit-1-i686-mingw32.zip",
+						"checksum": "SHA-256:e7ac765f78f594f67f53f100c271bd7b0d568c6c8f25653253de6599d15e2a08",
+						"size": "1735861"
+					}
+				]
+			}
+		]
+	}]
 }
