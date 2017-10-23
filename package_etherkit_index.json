@@ -119,8 +119,8 @@
 						"host": "i686-mingw32",
 						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i686-mingw32.zip",
 						"archiveFileName": "openocd-0.9.0-etherkit-1-i686-mingw32.zip",
-						"checksum": "SHA-256:9eb6aa469aa5c370220c45d4bde64d0ca7f38b44c44f3a8d4a843b5cb9afaeb8",
-						"size": "1588366"
+						"checksum": "SHA-256:cfe4ba3eb18c7d31bd9c3d4d8f65013e8ba3b3122b575a7849a42f59c870e758",
+						"size": "1736649"
 					}
 				]
 			}
