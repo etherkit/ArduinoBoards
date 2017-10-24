@@ -1,4 +1,4 @@
-prefix=/home/jason/ownCloud/Etherkit/git/OpenOCD-build-script/objdir
+prefix=/home/jason/Nextcloud/Etherkit/git/OpenOCD-build-script/objdir
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

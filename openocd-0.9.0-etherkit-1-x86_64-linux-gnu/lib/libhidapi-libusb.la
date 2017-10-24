@@ -5,10 +5,10 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libhidapi-libusb.so.0'
+dlname=''
 
 # Names of this library.
-library_names='libhidapi-libusb.so.0.0.0 libhidapi-libusb.so.0 libhidapi-libusb.so'
+library_names=''
 
 # The name of the static archive.
 old_library='libhidapi-libusb.a'
@@ -17,7 +17,7 @@ old_library='libhidapi-libusb.a'
 inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' -lrt -L/home/jason/ownCloud/Etherkit/git/OpenOCD-build-script/objdir/lib /home/jason/ownCloud/Etherkit/git/OpenOCD-build-script/objdir/lib/libusb-1.0.la -ludev'
+dependency_libs=' -lrt -L/home/jason/Nextcloud/Etherkit/git/OpenOCD-build-script/objdir/lib /home/jason/Nextcloud/Etherkit/git/OpenOCD-build-script/objdir/lib/libusb-1.0.la'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/jason/ownCloud/Etherkit/git/OpenOCD-build-script/objdir/lib'
+libdir='/home/jason/Nextcloud/Etherkit/git/OpenOCD-build-script/objdir/lib'

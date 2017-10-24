@@ -5,10 +5,10 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libhidapi-hidraw.so.0'
+dlname=''
 
 # Names of this library.
-library_names='libhidapi-hidraw.so.0.0.0 libhidapi-hidraw.so.0 libhidapi-hidraw.so'
+library_names=''
 
 # The name of the static archive.
 old_library='libhidapi-hidraw.a'
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/jason/ownCloud/Etherkit/git/OpenOCD-build-script/objdir/lib'
+libdir='/home/jason/Nextcloud/Etherkit/git/OpenOCD-build-script/objdir/lib'
