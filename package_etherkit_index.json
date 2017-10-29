@@ -112,8 +112,8 @@
 						"host": "i386-apple-darwin15",
 						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i386-apple-darwin15.tar.gz",
 						"archiveFileName": "openocd-0.9.0-etherkit-1-i386-apple-darwin15.tar.gz",
-						"checksum": "SHA-256:41b5f0f286d344008dfcfc8105879ad2812b5d407095482c93dd4aff6d009f6d",
-						"size": "1187616"
+						"checksum": "SHA-256:8620b2f123e599dd812667b6d0b7783f54fb4da15e5d8f7ba7b4183476f09b4a",
+						"size": "1187628"
 					},
 					{
 						"host": "i686-mingw32",
