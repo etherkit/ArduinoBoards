@@ -1,0 +1,8 @@
+# Udev rules for Empyrean Alpha and Beta
+SUBSYSTEM=="usb", ATTR{idProduct}=="73ea", ATTRS{idVendor}=="1209", MODE="0660", GROUP="dialout"
+SUBSYSTEM=="usb", ATTR{idProduct}=="73eb", ATTRS{idVendor}=="1209", MODE="0660", GROUP="dialout"
+SUBSYSTEM=="usb", ATTR{idProduct}=="88ea", ATTRS{idVendor}=="1209", MODE="0660", GROUP="dialout"
+SUBSYSTEM=="usb", ATTR{idProduct}=="88eb", ATTRS{idVendor}=="1209", MODE="0660", GROUP="dialout"
+
+# Blacklist Empyrean devices so that ModemManager cannot seize control of them
+ATTRS{idVendor}=="1209", ENV{ID_MM_DEVICE_IGNORE}="1"
