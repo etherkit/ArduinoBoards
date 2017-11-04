@@ -98,8 +98,8 @@
 						"host": "i686-pc-linux-gnu",
 						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i686-linux-gnu.tar.gz",
 						"archiveFileName": "openocd-0.9.0-etherkit-1-i686-linux-gnu.tar.gz",
-						"checksum": "SHA-256:e60d91ac9dbb35d13219003a2d518449e3f7beb14f20829b926965f6a7bd5e0f",
-						"size": "157"
+						"checksum": "SHA-256:0c80b421ef5ef8e238a6de3e9b0eb91443bf7fbf95e9f12a6778e1a0fd798ca9",
+						"size": "1299807"
 					},
 					{
 						"host": "x86_64-pc-linux-gnu",
