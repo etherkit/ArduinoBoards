@@ -47,7 +47,7 @@ empyrean_alpha.build.variant_system_lib=
 empyrean_alpha.build.vid=0x1209
 empyrean_alpha.build.pid=0x88ea
 empyrean_alpha.bootloader.tool=openocd
-empyrean_alpha.bootloader.file=empyrean_alpha/bootloader-empyrean_alpha-v3.2.2-2-g2eb2533.bin
+empyrean_alpha.bootloader.file=empyrean_alpha/bootloader-empyrean_alpha-v3.2.2-5-g05e6867.bin
 empyrean_alpha.bootloader.size=0x8000
 empyrean_alpha.bootloader.NVMCTRL_BOOTPROT=0x02
 
@@ -84,6 +84,6 @@ empyrean_beta.build.variant_system_lib=
 empyrean_beta.build.vid=0x1209
 empyrean_beta.build.pid=0x88eb
 empyrean_beta.bootloader.tool=openocd
-empyrean_beta.bootloader.file=empyrean_beta/bootloader-empyrean_beta-v3.2.2-2-g2eb2533.bin
+empyrean_beta.bootloader.file=empyrean_beta/bootloader-empyrean_beta-v3.2.2-5-g05e6867.bin
 empyrean_beta.bootloader.size=0x8000
 empyrean_beta.bootloader.NVMCTRL_BOOTPROT=0x02
