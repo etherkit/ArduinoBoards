@@ -1,4 +1,4 @@
-# Copyright (c) 2016 Etherkit.  All rights reserved.
+# Copyright (c) 2019 Etherkit.  All rights reserved.
 #
 # This library is free software; you can redistribute it and/or
 # modify it under the terms of the GNU Lesser General Public
@@ -101,11 +101,16 @@ recipe.objcopy.bin.pattern="{compiler.path}{compiler.elf2hex.cmd}" {compiler.elf
 ## Create output (hex file)
 recipe.objcopy.hex.pattern="{compiler.path}{compiler.elf2hex.cmd}" {compiler.elf2hex.hex.flags} {compiler.elf2hex.extra_flags} "{build.path}/{build.project_name}.elf" "{build.path}/{build.project_name}.hex"
 
-build.preferred_out_format=bin
+## Creat output (UF2 file)
+recipe.objcopy.uf2.pattern="{tools.uf2conv.path}/{tools.uf2conv.cmd}" "{build.path}/{build.project_name}.bin" "{build.path}/{build.project_name}.uf2"
+
+#build.preferred_out_format=bin
+build.preferred_out_format=uf2
 
 ## Save hex
 recipe.output.tmp_file={build.project_name}.{build.preferred_out_format}
 recipe.output.save_file={build.project_name}.{build.variant}.{build.preferred_out_format}
+
 
 ## Compute size
 recipe.size.pattern="{compiler.path}{compiler.size.cmd}" -A "{build.path}/{build.project_name}.elf"
@@ -151,3 +156,7 @@ tools.openocd.erase.pattern=
 tools.openocd.bootloader.params.verbose=-d2
 tools.openocd.bootloader.params.quiet=-d0
 tools.openocd.bootloader.pattern="{path}/{cmd}" {bootloader.verbose} -s "{path}/share/openocd/scripts/" -f "{runtime.platform.path}/variants/{build.variant}/{build.openocdscript}" -c "telnet_port disabled; init; halt; at91samd bootloader 0; program {{{runtime.platform.path}/bootloaders/{bootloader.file}}} verify reset; shutdown"
+
+
+tools.uf2conv.path={runtime.tools.uf2conv.path}
+tools.uf2conv.cmd=uf2conv

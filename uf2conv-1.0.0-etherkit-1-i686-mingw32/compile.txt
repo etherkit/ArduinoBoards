@@ -1,0 +1,2 @@
+i686-w64-mingw32-gcc uf2conv.c -o uf2conv.exe
+

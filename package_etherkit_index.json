@@ -47,6 +47,11 @@
 					"version": "0.9.0-etherkit-1"
 				},
 				{
+					"packager": "etherkit",
+					"name": "uf2conv",
+					"version": "1.0.0-etherkit-1"
+				},
+				{
 					"packager": "arduino",
 					"name": "CMSIS",
 					"version": "4.5.0"
@@ -113,7 +118,7 @@
 						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/openocd-0.9.0-etherkit-1-i386-apple-darwin15.tar.gz",
 						"archiveFileName": "openocd-0.9.0-etherkit-1-i386-apple-darwin15.tar.gz",
 						"checksum": "SHA-256:79ee820f6caec5b3c493f1d64fa98c79bb1610366b658f5cc13a697034b7732a",
-						"size": "1141969 "
+						"size": "1141969"
 					},
 					{
 						"host": "i686-mingw32",
@@ -121,6 +126,25 @@
 						"archiveFileName": "openocd-0.9.0-etherkit-1-i686-mingw32.zip",
 						"checksum": "SHA-256:b232179ca210926ce00562fa61703f7d1229115d84537f8a37fa5115a9262379",
 						"size": "1531285"
+					}
+				]
+			}
+			{
+				"name": "uf2conv",
+				"version": "1.0.0-etherkit-1",
+				"systems": [{
+						"host": "x86_64-pc-linux-gnu",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/uf2conv-1.0.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+						"archiveFileName": "uf2conv-1.0.0-etherkit-1-x86_64-linux-gnu.tar.gz",
+						"checksum": "SHA-256:9f68f34e9eeb6589125a3e8c6ddb0745c14c94052979eafb92956d1da07b874e",
+						"size": "3316"
+					},
+					{
+						"host": "i686-mingw32",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/uf2conv-1.0.0-etherkit-1-i686-mingw32.zip",
+						"archiveFileName": "uf2conv-1.0.0-etherkit-1-i686-mingw32.zip",
+						"checksum": "SHA-256:a5145057ded8f3551a47de26ef3f7dfca91702025424232f1844cdd3c5c7bb3a",
+						"size": "90307"
 					}
 				]
 			}
