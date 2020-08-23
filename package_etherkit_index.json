@@ -145,6 +145,13 @@
 						"archiveFileName": "uf2conv-1.0.0-etherkit-1-i686-mingw32.zip",
 						"checksum": "SHA-256:a5145057ded8f3551a47de26ef3f7dfca91702025424232f1844cdd3c5c7bb3a",
 						"size": "90307"
+					},
+					{
+						"host": "i386-apple-darwin15",
+						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/uf2conv-1.0.0-etherkit-1-i386-apple-darwin15.zip",
+						"archiveFileName": "uf2conv-1.0.0-etherkit-1-i386-apple-darwin15.zip",
+						"checksum": "SHA-256:ce834b8e519d8b36faaafc91c328acc6c52bae0c98b6db82f7709744977fd9b2",
+						"size": "1930"
 					}
 				]
 			}
