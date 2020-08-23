@@ -150,8 +150,8 @@
 						"host": "i386-apple-darwin15",
 						"url": "https://github.com/etherkit/ArduinoBoards/raw/master/uf2conv-1.0.0-etherkit-1-i386-apple-darwin11.tar.bz2",
 						"archiveFileName": "uf2conv-1.0.0-etherkit-1-i386-apple-darwin11.tar.bz2",
-						"checksum": "SHA-256:48468a80b78ae5aabd215c4fd92cf26bb6c6e709a2c730015ad26e24fdfce8ab",
-						"size": "1854"
+						"checksum": "SHA-256:43c6ac734bdb3f9a67dd010ad00ead83ba6da965757e9588a9ab05dde312ab85",
+						"size": "1845"
 					}
 				]
 			}
